@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HearthProject</title>
+  <link href="css/app.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <div class="main-background">
+    <nav>
+      <div class="container nav-wrapper">
+        <a href="#" class="brand-logo">HearthProject</a>
+        <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#/!">Home</a></li>
+          <li><a href="#!client">Client</a></li>
+          <li><a href="#!download">Download</a></li>
+          <li><a href="https://discord.gg/mQAeBaY" target="_blank">Discord</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#/!">Home</a></li>
+          <li><a href="#!client">Client</a></li>
+          <li><a href="#!download">Download</a></li>
+          <li><a href="https://discord.gg/mQAeBaY" target="_blank">Discord</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+  <div ng-app="hearthProject">
+    <ng-view></ng-view>
+    </div>
+  </div>
+  <script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
