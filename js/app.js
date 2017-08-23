@@ -11019,7 +11019,8 @@ __webpack_require__(35);
 var angular = __webpack_require__(38);
 __webpack_require__(40);
 $(".button-collapse").sideNav({
-  edge: 'right'
+  edge: 'right',
+  closeOnClick: true 
 });
 var app = angular.module('hearthProject', ['ngRoute']);
 app.config(function ($routeProvider) {
