@@ -10185,7 +10185,7 @@ nav {
 }
 
 @media only screen and (max-width: 767px) {
-  body {
+  .main-background {
     /* The file size of this background image is 93% smaller
        to improve page load speed on mobile internet connections */
        background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ) url(../img/image1_mobile.jpg) no-repeat center center fixed;
