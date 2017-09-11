@@ -10210,3 +10210,28 @@ nav {
 .list-with-circle > li {
   list-style-type: disc;
 }
+.page-footer {
+  background-color: transparent !important;
+  position: absolute;
+  bottom:0;
+  left:0;
+  width: 100%;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+.white-link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.white-link:hover {
+  color: #fff3e0;
+  text-decoration: underline;
+}

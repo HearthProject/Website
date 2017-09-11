@@ -11034,6 +11034,8 @@ app.config(function ($routeProvider) {
   }).when('/download', {
     templateUrl: 'views/packs.html',
     controller: 'PacksController'
+  }).when('/alpha', {
+    templateUrl: 'views/alpha.html'
   });
 });
 app.controller('LoginController', function ($scope) {
