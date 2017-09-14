@@ -11035,12 +11035,28 @@ app.config(function ($routeProvider) {
     templateUrl: 'views/packs.html',
     controller: 'PacksController'
   }).when('/alpha', {
-    templateUrl: 'views/alpha.html'
+    templateUrl: 'views/alpha.html',
+    controller: 'DownloadsController'
   });
 });
 app.controller('LoginController', function ($scope) {
 });
 app.controller('PacksController', function ($scope) {
+});
+app.controller('DownloadsController', function ($scope, $http) {
+	$http({
+		method: 'GET',
+		url: 'http://fdn.redstone.tech/theoneclient/oneclient/launcher/versions/0.0.3.31-fileData.json'
+	  }).then(function successCallback(response) {
+		  var data = response.data;
+		  for(var i = 0; i < data.versions.length; i++){
+			  var version = data.versions[i];
+			  
+		  }
+		}, function errorCallback(response) {
+		  // called asynchronously if an error occurs
+		  // or server returns response with an error status.
+		});
 });
 
 /***/ }),
