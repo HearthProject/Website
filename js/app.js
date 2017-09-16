@@ -11032,9 +11032,6 @@ app.config(function ($routeProvider) {
   }).when('/client', {
     templateUrl: 'views/client.html'
   }).when('/download', {
-    templateUrl: 'views/packs.html',
-    controller: 'PacksController'
-  }).when('/alpha', {
     templateUrl: 'views/alpha.html',
     controller: 'DownloadsController'
   });
@@ -11044,19 +11041,24 @@ app.controller('LoginController', function ($scope) {
 app.controller('PacksController', function ($scope) {
 });
 app.controller('DownloadsController', function ($scope, $http) {
+	$scope.versions = [];
 	$http({
 		method: 'GET',
-		url: 'http://fdn.redstone.tech/theoneclient/oneclient/launcher/versions/0.0.3.31-fileData.json'
+		url: '/data/download.json'
 	  }).then(function successCallback(response) {
-		  var data = response.data;
-		  for(var i = 0; i < data.versions.length; i++){
-			  var version = data.versions[i];
-			  
-		  }
+			console.log(response.data['downloads']);  
+			var data = response.data;
+			for(var version in data['downloads']){
+				console.log(data['downloads'][version]);
+				$scope.versions.push(data['downloads'][version]);
+			}
+			console.log($scope.versions);
 		}, function errorCallback(response) {
-		  // called asynchronously if an error occurs
-		  // or server returns response with an error status.
+			// called asynchronously if an error occurs
+			// or server returns response with an error status.
+			throw response;
 		});
+
 });
 
 /***/ }),

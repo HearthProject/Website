@@ -3,11 +3,11 @@
           <!-- <h1 style="font-weight: 500;">Register for Alpha</h1>
           <h5 style="font-weight: 300;">Register for our alpha testing of the OneClient</h5>
           <a target="_blank" class="waves-effect waves-light btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc5JZUcAbsx-jS4_21YmbaV7XFqKVwlcbZ_Ut-n2nO4abTmug/viewform">Register for Alpha</a> -->
-          <h1 style="font-weight: 500;">Alpha Downloads</h1>
+          <h2 style="font-weight: 500;">Downloads</h2>
           <h5 style="font-weight: 300;">Prerequisites</h5>
           <h6 style="font-weight: 300;">Windows: Java 8</h5>
           <h6 style="font-weight: 300;">Linux: OpenJDK or Oracle Java 8 and OpenJFX</h5>
-            <table class="table-grey bordered responsive-table">
+            <table class="table-grey bordered">
                 <thead>
                   <tr>
                       <th>Platform</th>
@@ -16,49 +16,13 @@
                       <th>Version</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>Windows 64 Bit</td>
-                    <td>If you are using windows, this is the version that you will most likely need.</td>
-                    <td><a class="white-link" ng-href="{{windows-386.link}}">Download</a></td>
-                    <td ng-model="windows-386.version">0.0.3.31</td>
-                  </tr>
-                  <tr>
-                    <td>Windows 32 Bit</td>
-                    <td>If the 64bit version doesnt work, try this one.</td>
-                    <td><a class="white-link" ng-href="{{windows-amd64.link}}">Download</a></td>
-                    <td ng-model="windows-amd64.version">0.0.3.31</td>
-                  </tr>
-                  <tr>
-                    <td>Mac OS</td>
-                    <td>If you are using Apple Mac OS, use this one.</td>
-                    <td><a class="white-link" ng-href="{{windows-386.link}}">Download</a></td>
-                    <td ng-model="windows-386.version">0.0.3.31</td>
-                  </tr>
-                  <tr>
-                    <td>Linux 64 Bit</td>
-                    <td>For use on 64 bit linux (you may need to allow perssion to execute it)</td>
-                    <td><a class="white-link" ng-href="{{windows-386.link}}">Download</a></td>
-                    <td ng-model="windows-386.version">0.0.3.31</td>
-                  </tr>
-                  <tr>
-                    <td>Linux 32 Bit</td>
-                    <td>For use on 32 bit linux (you may need to allow perssion to execute it)</td>
-                    <td><a class="white-link" ng-href="{{linux-amd64.link}}">Download</a></td>
-                    <td ng-model="linux-amd64.version">0.0.3.31</td>
-                  </tr>
-                  <tr>
-                    <td>Cross Platform (jar)</td>
-                    <td>This will run on any system that java 8 supports. Recommended only if you know what you are doing.</td>
-                    <td><a class="white-link" ng-href="{{windows-386.link}}">Download</a></td>
-                    <td ng-model="windows-386.version">0.0.3.31</td>
-                  </tr>
-                  <tr>
-                    <td>Portable (jar)</td>
-                    <td>The portable jar keeps all files it uses in the same directory as the jar. This is great for running from a USB stick.</td>
-                    <td><a class="white-link" ng-href="{{windows-386.link}}">Download</a></td>
-                    <td ng-model="windows-386.version">0.0.3.31</td>
-                  </tr>
+                <tbody ng-repeat="version in versions">
+                    <tr>
+                      <td>{{version.name}}</td>
+                      <td>{{version.description}}</td>
+                      <td><a class="white-link" ng-href="{{version.url}}">Download</a></td>
+                      <td>{{version.version}}</td>
+                    </tr>
                 </tbody>
               </table>
         </div>
