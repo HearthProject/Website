@@ -13,7 +13,6 @@
                       <th>Platform</th>
                       <th>Description</th>
                       <th>Download</th>
-                      <th>Version</th>
                   </tr>
                 </thead>
                 <tbody ng-repeat="version in versions">
@@ -21,7 +20,6 @@
                       <td>{{version.name}}</td>
                       <td>{{version.description}}</td>
                       <td><a class="white-link" ng-href="{{version.url}}">Download</a></td>
-                      <td>{{version.version}}</td>
                     </tr>
                 </tbody>
               </table>
