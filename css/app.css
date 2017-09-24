@@ -2402,7 +2402,7 @@ button.picker__close:focus{background-color:#a1ded8;}
 .yahoo:hover{background-color:#9412cd !important;}
 nav{background-color:transparent;-webkit-box-shadow:none;box-shadow:none;}
 html{height:100%;background:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(../img/image1.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}
-@media only screen and (max-width:767px){.main-background{background:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)) url(../img/image1_mobile.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}
+@media only screen and (max-width:767px){html{background:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)) url(../img/image1_mobile.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}
 }
 .height{height:100vh;}
 .white-text{color:#fff;}
