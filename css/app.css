@@ -1,4 +1,5 @@
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);.materialize-red{background-color:#e51c23 !important;}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.materialize-red{background-color:#e51c23 !important;}
 .materialize-red-text{color:#e51c23 !important;}
 .materialize-red.lighten-5{background-color:#fdeaeb !important;}
 .materialize-red-text.text-lighten-5{color:#fdeaeb !important;}
@@ -158,7 +159,7 @@
 .indigo-text.text-accent-3{color:#3d5afe !important;}
 .indigo.accent-4{background-color:#304ffe !important;}
 .indigo-text.text-accent-4{color:#304ffe !important;}
-.blue{background-color:#2196F3 !important;}
+.blue{background-color: #2a6ffb !important;}
 .blue-text{color:#2196F3 !important;}
 .blue.lighten-5{background-color:#E3F2FD !important;}
 .blue-text.text-lighten-5{color:#E3F2FD !important;}
@@ -533,7 +534,7 @@
 .transparent{background-color:transparent !important;}
 .transparent-text{color:transparent !important;}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-body{margin:0;}
+body{margin:0; background: #282828;}
 article,
 aside,
 details,

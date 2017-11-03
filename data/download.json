@@ -1,47 +1,6 @@
 
 {
     "downloads": {
-        "darwin-amd64": {
-            "description": "If you are using Apple Mac OS, use this one.",
-            "name": "Mac OS",
-            "url": "http://fdn.redstone.tech/theoneclient/oneclient/launcher/versions/OneClient-0.0.3.31-osx.zip",
-            "version": "0.0.3.31"
-        },
-        "jar": {
-            "description": "This will run on any system that java 8 supports. Recommended only if you know what you are doing.",
-            "name": "Cross Platform (jar)",
-            "url": "http://fdn.redstone.tech/theoneclient/oneclient/versions/OneClient-0.0.5.182.jar",
-            "version": "0.0.5.182"
-        },
-        "jar_portable": {
-            "description": "The portable jar keeps all files it uses in the same directory as the jar. This is great for running from a USB stick.",
-            "name": "Portable (jar)",
-            "url": "http://fdn.redstone.tech/theoneclient/oneclient/versions/OneClient-0.0.5.182-portable.jar",
-            "version": "0.0.5.182"
-        },
-        "linux-amd64": {
-            "description": "For use on 64 bit linux (you may need to allow perssion to execute it)",
-            "name": "Linux 64 Bit",
-            "url": "http://fdn.redstone.tech/theoneclient/oneclient/launcher/versions/OneClient-0.0.3.31-linux-amd64",
-            "version": "0.0.3.31"
-        },
-        "linux-linux-386": {
-            "description": "For use on 32 bit linux (you may need to allow perssion to execute it)",
-            "name": "Linux 32 Bit",
-            "url": "http://fdn.redstone.tech/theoneclient/oneclient/launcher/versions/OneClient-0.0.3.31-linux-386",
-            "version": "0.0.3.31"
-        },
-        "windows-386": {
-            "description": "If the 64bit version doesnt work, try this one.",
-            "name": "Windows 32 Bit",
-            "url": "http://fdn.redstone.tech/theoneclient/oneclient/launcher/versions/OneClient-0.0.3.31-windows-386.exe",
-            "version": "0.0.3.31"
-        },
-        "windows-amd64": {
-            "description": "If you are using windows, this is the version that you will most likey need.",
-            "name": "Windows 64 Bit",
-            "url": "http://fdn.redstone.tech/theoneclient/oneclient/launcher/versions/OneClient-0.0.3.31-windows-amd64.exe",
-            "version": "0.0.3.31"
-        }
+        
     }
 }
