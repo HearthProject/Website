@@ -1,26 +1,7 @@
 <div class="height valign-wrapper white-text">
     <div class="container center-align">
         <h2 style="font-weight: 500;">Downloads</h2>
-        <h5 style="font-weight: 300;">Prerequisites</h5>
-        <div class="card blue darkern-1">
-          <div class="card-content">
-            <table class="table-grey bordered">
-              <thead>
-              <tr>
-                  <th>Platform</th>
-                  <th>Description</th>
-                  <th>Download</th>
-              </tr>
-              </thead>
-              <tbody ng-repeat="version in versions">
-              <tr>
-                  <td>{{version.name}}</td>
-                  <td>{{version.description}}</td>
-                  <td><a class="white-link" ng-href="{{version.url}}">Download</a></td>
-              </tr>
-              </tbody>
-          </table>
-          </div>
-        </div>
+        <a href="{{windows.url}}" class="blue waves-effect waves-light btn">Windows - {{windows.version}}</a>
+        <a href="{{linux.url}}" class="blue waves-effect waves-light btn">Linux - {{linux.version}}</a>
     </div>
 </div>
